@@ -25,7 +25,16 @@ Hệ thống được chia làm 2 phân quyền với các chức năng riêng b
 * **Thư viện tích hợp:** System.Windows.Forms.DataVisualization.Charting (Biểu đồ)
 
 ## 📸 Giao Diện Gợi Ý
-*(Bạn có thể chụp ảnh màn hình phần mềm của mình và kéo thả vào đây để Github tự tạo link ảnh nhé!)*
+* **Màn hình của Quản Lý:**
+<img width="1913" height="1014" alt="image" src="https://github.com/user-attachments/assets/987435da-e6c8-4126-8e60-0cf69b4aa74c" />
+<img width="1918" height="1019" alt="image" src="https://github.com/user-attachments/assets/8cddfb39-e8a4-4ec0-b882-ecd122a82956" />
+<img width="1915" height="1018" alt="image" src="https://github.com/user-attachments/assets/d26d2614-6dac-41d4-9bce-67e7ea93cba6" />
+<img width="1916" height="1016" alt="image" src="https://github.com/user-attachments/assets/36931d05-e76f-47af-9712-6a0881be39fb" />
+<img width="1918" height="1013" alt="image" src="https://github.com/user-attachments/assets/c65aa088-7043-428e-9abf-4bbb6929a58a" />
+
+* **Màn hình của Nhân Viên:**
+<img width="1909" height="1017" alt="image" src="https://github.com/user-attachments/assets/462608dd-a3a5-47b6-8efc-2945c0b5c887" />
+<img width="1909" height="1019" alt="image" src="https://github.com/user-attachments/assets/fac37fde-3dcc-4f10-97b4-160deb8798f3" />
 
 ## 🚀 Hướng Dẫn Cài Đặt & Chạy Dự Án
 
