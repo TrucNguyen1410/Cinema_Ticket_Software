@@ -23,6 +23,43 @@ namespace CinemaTicket
 
         private async void Form1_Load(object sender, EventArgs e)
         {
+            // =========================================================
+            // TẠO NÚT ĐĂNG XUẤT Ở GÓC TRÊN BÊN PHẢI
+            // =========================================================
+            Button btnLogout = new Button();
+            btnLogout.Text = "Đăng xuất";
+            btnLogout.Size = new Size(110, 35);
+            // Đặt vị trí ở góc trên bên phải (cách lề phải 120px, cách lề trên 5px)
+            btnLogout.Location = new Point(this.ClientSize.Width - 120, 5);
+            // Dùng Anchor để khi phóng to/thu nhỏ cửa sổ, nút vẫn bám sát góc phải
+            btnLogout.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnLogout.BackColor = Color.IndianRed;
+            btnLogout.ForeColor = Color.White;
+            btnLogout.Font = new Font("Arial", 10, FontStyle.Bold);
+            btnLogout.Cursor = Cursors.Hand;
+            btnLogout.FlatStyle = FlatStyle.Flat;
+            btnLogout.FlatAppearance.BorderSize = 0;
+
+            // Sự kiện khi ấn nút
+            btnLogout.Click += (s, ev) =>
+            {
+                if (MessageBox.Show("Bạn có chắc chắn muốn đăng xuất không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    this.Hide(); // Ẩn form hiện tại
+
+                    // MỞ LẠI FORM ĐĂNG NHẬP
+                    // Lưu ý: Nếu form đăng nhập của bạn tên là tên khác (vd: frmLogin), hãy đổi chữ Login bên dưới cho đúng nhé!
+                    Login loginForm = new Login();
+                    loginForm.ShowDialog();
+
+                    this.Close(); // Đóng hoàn toàn Form1 sau khi form đăng nhập tắt
+                }
+            };
+
+            // Thêm nút vào Form và đẩy nó lên trên cùng để không bị che khuất
+            this.Controls.Add(btnLogout);
+            btnLogout.BringToFront();
+
             InitScheduler();
             InitChartDynamic();
 
